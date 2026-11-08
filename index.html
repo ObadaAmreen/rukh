@@ -6,12 +6,14 @@
     <meta name="theme-color" content="#0f2622" media="(prefers-color-scheme: dark)" />
     <meta name="theme-color" content="#ece5d5" media="(prefers-color-scheme: light)" />
     <meta name="referrer" content="no-referrer" />
+    <!-- CSP: scripts/styles only from this site; data goes only to Rukh's Supabase project (+ the public Lichess API to check a username at sign-up). (vite.student.config.ts drops it on the dev server, whose HMR needs inline scripts.) -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://*.googleusercontent.com; font-src 'self' data:; connect-src 'self' https://zpxppczekpdqszhlkpkg.supabase.co https://lichess.org; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'" />
     <meta name="description" content="رُخ — حلّ واجب الشطرنج الذي أرسله مدربك" />
     <title>رُخ — واجب الشطرنج</title>
     <link rel="icon" href="./icon.svg" />
     <link rel="manifest" href="./manifest.webmanifest" />
-    <script type="module" crossorigin src="./assets/student-BTlDfCHc.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/student-BcHALCLx.css">
+    <script type="module" crossorigin src="./assets/student-C5tlJVL3.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/student-BqFtna7G.css">
   </head>
   <body>
     <div id="root"></div>
